@@ -1,0 +1,152 @@
+/*
+pozadinska boja (black): #1d1e20
+glavna boja (orange): #e78728
+boja kruga (orange2): #c57d3b
+boja teksta (white): #ffe095
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #ffe095;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    background: #555;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #272727;
+}
+
+
+/* NAVIGATION */
+#main-nav {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #e78728;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#main-nav ul {
+    list-style-type: none;
+}
+
+#main-nav li {
+    display: block;
+    padding: 15px 25px;
+    color: #1d1e20;
+    transition: 500ms;
+}
+
+#main-nav a li:hover {
+    background: #ffe095;
+    color: #c57d3b;
+}
+/* NAVIGATION END */
+
+
+
+/* CONTENT */
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #1d1e20;
+}
+
+
+.div-title {
+    text-align: center;
+    color: #ffe095;
+}
+
+#main-title {
+    padding: 40px 20px 20px 20px;
+}
+
+p {
+    margin: 5px;
+}
+
+#blic-autopraonica-image {
+    width: 100%;
+    text-align: center;
+}
+
+#about {
+    padding: 10px;
+}
+
+.contact-info {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* PRICES */
+#prices {
+    width: 100%;
+}
+
+.price-column {
+    width: 100%;
+}
+
+.price-column ul {
+    list-style-type: none;
+}
+
+.price-column li {
+    background: #333;
+    padding: 5px 10px;
+}
+
+.price-category {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 39px 5px 5px 5px;
+}
+
+.price-service {
+    margin: 5px; /* margin: 5px 5px 5px 20px; za uvučeno */
+}
+
+.price-kn {
+    float: right;
+    width: 55px;
+    text-align: right;
+    background: #363636;
+}
+/* PRICES END */
+
+
+/* MAPS */
+#title-location {
+    padding: 20px 20px 10px 20px;
+}
+
+#g-maps iframe {
+    width: 100% !important;
+    clear: both;
+    margin-top: 20px;
+}
+/* MAPS END */
+
+@media screen and (min-width: 600px) {
+    #main-nav li {
+        display: inline-block;
+    }
+
+    .price-column {
+        width: 50%;
+        float: left;
+    }
+}
