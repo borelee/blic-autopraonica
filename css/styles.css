@@ -13,8 +13,8 @@ boja teksta (white): #ffe095
 }
 
 body {
-    font-family: 'Open sans', sans-serif;
-    background: #555;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #888;
 
 }
 
@@ -23,33 +23,68 @@ a {
 }
 
 header {
-    background: #272727;
+    background: #000;
+    min-height: 60px;
 }
 
 
 /* NAVIGATION */
 #main-nav {
+    position: relative;
     max-width: 960px;
     margin: 0 auto;
+    background: #000;
+}
+
+#logo-container {
+    display: block;
+    clear: right;
+}
+
+#logo {
+    float: left;
+    display: block;
+}
+
+#menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    padding: 12px;
+}
+
+#menu-icon:hover {
+    cursor: pointer;
+    background: #444;
+}
+
+.menu-icon-line {
+    width: 28px;
+    height: 4px;
+    margin: 6px;
     background: #e78728;
+}
+
+#top-nav {
+    list-style-type: none;
+    clear: both;
+    display: none;
+}
+
+#top-nav li {
+    height: 60px;
+    text-align: center;
+    padding: 20px 25px;
+    color: #e78728;
+    transition: 500ms;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-#main-nav ul {
-    list-style-type: none;
-}
-
-#main-nav li {
-    display: block;
-    padding: 15px 25px;
-    color: #1d1e20;
-    transition: 500ms;
-}
-
-#main-nav a li:hover {
-    background: #ffe095;
-    color: #c57d3b;
+#top-nav a li:hover {
+    background: #e78728;
+    color: #000;
 }
 /* NAVIGATION END */
 
@@ -60,20 +95,36 @@ header {
     max-width: 960px;
     margin: 0 auto;
     background: #1d1e20;
-}
-
-
-.div-title {
-    text-align: center;
-    color: #ffe095;
-}
-
-#main-title {
-    padding: 40px 20px 20px 20px;
+/*    background-image: url("../images/vrtikala.png");  */
 }
 
 p {
-    margin: 5px;
+    margin: 10px;
+}
+
+
+#intro {
+    height: 416px;
+    max-width: 960px;
+    background: #222 url("../images/cleaning-1837328_1920_DARK6.png") no-repeat center;
+}
+
+#background-photo {
+    max-width: 960px;
+}
+
+.div-title {
+    text-align: center;
+    color: #e78728;
+}
+
+#main-title {
+    padding: 130px 20px 20px 20px;
+    font-size: 36px;
+}
+
+#sub-title {
+    padding: 0 20px 40px 20px;
 }
 
 #blic-autopraonica-image {
@@ -81,21 +132,20 @@ p {
     text-align: center;
 }
 
-#about {
-    padding: 10px;
-}
-
-.contact-info {
-    font-weight: bold;
-    margin-right: 5px;
-}
 
 /* PRICES */
 #prices {
     width: 100%;
+    position: relative;
+    overflow: none; 
+}
+
+#price-title {
+padding: 30px 20px 0 20px;
 }
 
 .price-column {
+    display: inline-block;
     width: 100%;
 }
 
@@ -117,20 +167,63 @@ p {
 
 .price-service {
     margin: 5px; /* margin: 5px 5px 5px 20px; za uvučeno */
+    position: relative;
+    padding: 5px 10px;
+    background: #444;
 }
 
 .price-kn {
-    float: right;
-    width: 55px;
+    position: absolute;
+    right: 5px;
+    padding: 0 5px;
     text-align: right;
-    background: #363636;
 }
+
+
+
+/* CONTACT */
+#about {
+    margin: 10px 10px 20px 10px;
+    clear: both;
+}
+
+#contact {
+    padding: 30px 20px 10px 20px;
+}
+
+#about address {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.contact-info {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+/* CONTACT END */
+
+
+/*
+#divovska {
+    position: relative;
+}
+
+
+
+.cijena {
+    position: absolute;
+    right: 15px;
+} */
+
+
 /* PRICES END */
 
 
 /* MAPS */
 #title-location {
-    padding: 20px 20px 10px 20px;
+    padding: 50px 20px 10px 20px;
 }
 
 #g-maps iframe {
@@ -140,13 +233,37 @@ p {
 }
 /* MAPS END */
 
-@media screen and (min-width: 600px) {
-    #main-nav li {
+@media screen and (min-width: 680px) {
+    #menu-icon {
+        display: none;
+    }
+
+    #top-nav {
+        display: inline-block;
+        clear: none;
+    }
+
+    #top-nav li {
         display: inline-block;
     }
 
     .price-column {
         width: 50%;
-        float: left;
+    }
+
+    #price-column-1 {
+        position: relative;
+        left: 0;
+        padding-bottom: 40px;
+    }
+
+    #price-column-2 {
+        position: absolute;
+        right: 0;
+        padding-bottom: 40px;
+    }
+
+    #contact {
+        padding-top: 10px;
     }
 }
