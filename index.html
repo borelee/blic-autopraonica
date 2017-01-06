@@ -14,37 +14,44 @@
     <header>
         <nav id="main-nav">
         <!-- ovdje ide LOGO -->
-            <ul>
-                <a href="#"><li>LOGO</li></a>
-                <a href="#"><li>Kontakt</li></a>
-                <a href="#prices"><li>Cjenik</li></a>
-                <a href="#"><li>Gdje smo</li></a>
+            <div id="logo-container">
+                <a href="#">
+                    <img src="images/Blic-buisness-card-front-6.png" id="logo">
+                </a>
+            </div>
+
+            <div id="menu-icon">
+                <a> <!-- Menu icon made of three divs -->
+                    <div class="menu-icon-line"></div>
+                    <div class="menu-icon-line"></div>
+                    <div class="menu-icon-line"></div>
+                </a>
+            </div>            
+
+            <ul id="top-nav">
+                <a href="#price-title"><li>Cijene</li></a>
+                <a href="#contact"><li>Kontakt</li></a>
+                <a href="#title-location"><li>Karta</li></a>
             </ul>
         </nav>
     </header>
 
     <main id="content">
 
-        <h1 class="div-title" id="main-title">Blic Autopraonica Zadar</h1>
+        <div id="intro">
+<!--            <img src="images/cleaning-1837330_1920-EDITED_1.png" id="background-photo">  -->
 
-        <h3 class="div-title">23 godine tradicije!</h3>
+            <h1 class="div-title" id="main-title">Blic Autopraonica Zadar</h1>
 
-<!--        <img src="https://www.washlb.com/wp-content/uploads/2015/12/carwash02.jpg" id="blic-autopraonica-image">   -->
-
-        <div id="about">
-            <address>
-                        <p><span class="contact-info">Adresa: </span> Eugena Kvaternika 3, 23000 Zadar</p>
-                        <p><span class="contact-info">Telefon: </span> <a href="tel:0981234567">091 887 3421</a></p>
-                        <p><span class="contact-info">Telefon: </span> <a href="tel:0981234567">092 292 9615</a></p>
-                        <p><span class="contact-info">Email: </span> <a href="mailto:bliccarwash@gmail.com">bliccarwash@gmail.com</a></p>
-            </address>
-
+            <h2 class="div-title" id="sub-title">Car Wash & Detailing</h2>
         </div>
 
-        <div id="prices">
-            <h2 class="div-title">Cijene</h2>
 
-            <div class="price-column">
+
+            <h2 class="div-title" id="price-title">Cijene</h2>
+
+        <div id="prices">            
+            <div class="price-column" id="price-column-1">
                 <ul>
                     <li class="price-category">Osobna vozila - usluge pranja:</li>
                     <li class="price-service">Komplet pranje <span class="price-kn">80 kn</span></li>
@@ -60,11 +67,11 @@
                 </ul>
             </div>
 
-            <div class="price-column">
+            <div class="price-column" id="price-column-2">
                 <ul>
                     <li class="price-category">Dodatne usluge:</li>
-                    <li class="price-service">Kemijsko čišćenje vozila <div class="price-kn">300 kn</div></li>
-                    <li class="price-service">Kemijsko čišćenje po komadu <div class="price-kn">50 kn</div></li>
+                    <li class="price-service">Kemijsko čišćenje vozila <span class="price-kn">300 kn</span></li>
+                    <li class="price-service">Kemijsko čišćenje po komadu <span class="price-kn">50 kn</span></li>
                     <li class="price-service">Pranje motora <span class="price-kn">40 kn</span></li>
                     <li class="price-service">Poliranje vozila <span class="price-kn">500 kn</span></li>
                     <li class="price-service">Poliranje po elementu <span class="price-kn">100 kn</span></li>
@@ -74,11 +81,34 @@
                 </ul>
             </div>
         </div>
+<!--        <div id="divovska">
+                    <div class="price-category">Dodatne usluge:</div>
+                    <div class="price-service">Kemijsko čišćenje vozila <span class="cijena">300 kn</span></div>
+                    <div class="price-service">Kemijsko čišćenje po komadu <span class="cijena">50 kn</span></div>
+                    <div class="price-service">Pranje motora <span class="cijena">40 kn</span></div>
+                    <div class="price-service">Poliranje vozila <span class="cijena">500 kn</span></div>
+                    <div class="price-service">Poliranje po elementu <span class="cijena">100 kn</span></div>
+                    <div class="price-service">Poliranje farova <span class="cijena">150 kn</span></div>
+                    <div class="price-service">Kvarcna zaštita farova <span class="cijena">50 kn</span></div>
+                    <div class="price-service">Odmašćivanje felgi po komadu <span class="cijena">20 kn</span></div>
+        </div> -->
 
+        <div id="about">
+        <h2 class="div-title" id="contact">Kontakt</h2>
+
+
+            <address>
+                <p><span class="contact-info">Adresa: </span> Eugena Kvaternika 3, 23000 Zadar</p>
+                <p><span class="contact-info">Tel: </span> <a href="tel:0981234567">091 887 3421</a></p>
+                <p><span class="contact-info">Tel: </span> <a href="tel:0981234567">092 292 9615</a></p>
+                <p><span class="contact-info">Email: </span> <a href="mailto:bliccarwash@gmail.com">bliccarwash@gmail.com</a></p>
+            </address>
+        </div>
+
+        <div>
+            <h2 class="div-title" id="title-location">Karta</h2>
+        </div>
         <div id="g-maps">
-            <h2 class="div-title" id="title-location">Gdje se nalazimo?</h2>
-
-            <p>Adresa: Eugena Kvaternika 3, 23000 Zadar</p>
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1095.8736883193399!2d15.238501920834747!3d44.10673077474449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761fa602243d54d%3A0x2ea7c598f74c1fde!2sUl.+Eugena+Kvaternika+3%2C+23000%2C+Zadar%2C+Croatia!5e1!3m2!1sen!2shr!4v1481727324063" width="960" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
